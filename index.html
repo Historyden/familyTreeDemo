@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family Tree</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <header>
+        <nav>
+          <a href="#person1">Home</a>
+          <a href="#person2">Contact Us</a>
+          <a href="#person3">About Us</a>
+        </nav>
+      </header>
+    </div>
+    <!-- Page 1: John Doe -->
+    <div class="page" id="person1">
+      <div class="container">
+        <div class="image-section">
+          <img src="./pxfuel.jpg" alt="John Doe" />
+        </div>
+        <div class="info-section">
+          <h1>John Doe</h1>
+          <p><strong>Born:</strong> January 1, 1970</p>
+          <p><strong>Occupation:</strong> Engineer</p>
+          <a href="#person2" class="next-link">Next: Jane Doe</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 2: Jane Doe -->
+    <div class="page" id="person2">
+      <div class="container">
+        <div class="image-section">
+          <img src="./Mahadev.jpg" alt="Jane Doe" />
+        </div>
+        <div class="info-section">
+          <h1>Jane Doe</h1>
+          <p><strong>Born:</strong> June 15, 1995</p>
+          <p><strong>Occupation:</strong> Doctor</p>
+          <a href="#person1" class="prev-link">Previous: John Doe</a>
+          <a href="#person3" class="next-link">Next: Emma Doe</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 3: Emma Doe -->
+    <div class="page" id="person3">
+      <div class="container">
+        <div class="image-section">
+          <img src="./har har mahadev.jpg" alt="Emma Doe" />
+        </div>
+        <div class="info-section">
+          <h1>Emma Doe</h1>
+          <p><strong>Born:</strong> March 10, 2020</p>
+          <p><strong>Occupation:</strong> Too Young</p>
+          <a href="#person2" class="prev-link">Previous: Jane Doe</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Family Tree Project. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
